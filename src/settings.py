@@ -5,40 +5,65 @@ from dataset_tools.templates import AnnotationType, CVTask, Industry, License
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "DeepGlobe 2018"
+PROJECT_NAME_FULL: str = "DeepGlobe Challenge 2018 Land Cover Classification Dataset"
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-INDUSTRIES: List[Industry] = None
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+LICENSE: License = License.Custom(
+    url="http://deepglobe.org/docs/CVPR_InternalUseLicenseAgreement_07-11-18.pdf"
+)
+INDUSTRIES: List[Industry] = [
+    Industry.Environmental(),
+    Industry.Agriculture(),
+    Industry.Livestock(),
+    Industry.UrbanPlanning(),
+]
+CV_TASKS: List[CVTask] = [
+    CVTask.SemanticSegmentation(),
+    CVTask.InstanceSegmentation(),
+    CVTask.ObjectDetection(),
+]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
-RELEASE_YEAR: int = None
-HOMEPAGE_URL: str = None
+RELEASE_YEAR: int = 2018
+HOMEPAGE_URL: str = (
+    "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset"
+)
 # e.g. "https://some.com/dataset/homepage"
 
 PREVIEW_IMAGE_ID: int = None
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/DeepGlobe"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset/download?datasetVersionNumber=2"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "urban_land": [0, 255, 255],
+    "agriculture_land": [255, 255, 0],
+    "rangeland": [255, 0, 255],
+    "forest_land": [0, 255, 0],
+    "water": [0, 0, 255],
+    "barren_land": [255, 255, 255],
+    "unknown": [0, 0, 0],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = None
-CITATION_URL: Optional[str] = None
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+PAPER: Optional[str] = "https://arxiv.org/pdf/1805.06561.pdf"
+CITATION_URL: Optional[
+    str
+] = "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "DeepGlobe"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://deepglobe.org/"
 TAGS: List[str] = None
 
 ##################################
