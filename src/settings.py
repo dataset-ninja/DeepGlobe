@@ -22,10 +22,8 @@ INDUSTRIES: List[Industry] = [
 ]
 CV_TASKS: List[CVTask] = [
     CVTask.SemanticSegmentation(),
-    CVTask.InstanceSegmentation(),
-    CVTask.ObjectDetection(),
 ]
-ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_YEAR: int = 2018
 HOMEPAGE_URL: str = (
