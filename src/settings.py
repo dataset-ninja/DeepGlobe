@@ -60,7 +60,7 @@ PAPER: Optional[str] = "https://arxiv.org/pdf/1805.06561.pdf"
 CITATION_URL: Optional[
     str
 ] = "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset"
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "DeepGlobe"
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "DeepGlobe Satellite Challenge (CVPR 2018)"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://deepglobe.org/"
 TAGS: List[str] = None
 
