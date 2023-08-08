@@ -1,4 +1,4 @@
-**DeepGlobe Land Cover Classification Dataset 2018 Challenge** is a dataset for a semantic segmentation task. It is used in the agricultural industry. 
+**DeepGlobe Land Cover Classification Dataset 2018 Challenge** is a dataset for a semantic segmentation task. It is used in the urban planning and environmental research. Possible applications of the dataset could be in the agricultural industry. 
 
 The dataset consists of 1146 images with 3042 labeled objects belonging to 7 different classes including *agriculture_land*, *urban_land*, *rangeland*, and other: *water*, *barren_land*, *forest_land*, and *unknown*.
 

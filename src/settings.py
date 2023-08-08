@@ -23,9 +23,9 @@ LICENSE: License = License.Custom(
     url="http://deepglobe.org/docs/CVPR_InternalUseLicenseAgreement_07-11-18.pdf"
 )
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
-    # Research.UrbanPlanning(),
-    # Research.Environmental(),
-    Industry.Agricultural()
+    Research.UrbanPlanning(),
+    Research.Environmental(),
+    Industry.Agricultural(is_used=False),
 ]
 CATEGORY: Category = Category.Aerial(
     extra=[
