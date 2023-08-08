@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "DeepGlobe 2018"
-PROJECT_NAME_FULL: str = "DeepGlobe Challenge 2018 Land Cover Classification Dataset"
+PROJECT_NAME: str = "DeepGlobe Land Cover 2018"
+PROJECT_NAME_FULL: str = "DeepGlobe Land Cover Classification Dataset 2018 Challenge"
 
 ##################################
 # * After uploading to instance ##
@@ -23,18 +23,20 @@ LICENSE: License = License.Custom(
     url="http://deepglobe.org/docs/CVPR_InternalUseLicenseAgreement_07-11-18.pdf"
 )
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [
-    Industry.Environmental(),
-    Industry.Agriculture(),
-    Industry.Livestock(),
-    Industry.UrbanPlanning(),
+    # Research.UrbanPlanning(),
+    # Research.Environmental(),
+    Industry.Agricultural()
 ]
 CATEGORY: Category = Category.Aerial(
-    extra=[Category.Agriculture(), Category.Livestock(), Category.EnergyAndUtilities()]
+    extra=[
+        Category.Satellite(),
+        Category.Environmental(),
+        Category.EnergyAndUtilities(),
+        Category.Agriculture(),
+    ]
 )
 
-CV_TASKS: List[CVTask] = [
-    CVTask.SemanticSegmentation(),
-]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2018-06-28"  # e.g. "YYYY-MM-DD"
@@ -71,7 +73,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
-PAPER: Optional[str] = "https://arxiv.org/pdf/1805.06561.pdf"
+PAPER: Optional[str] = "https://arxiv.org/abs/1805.06561"
 CITATION_URL: Optional[
     str
 ] = "https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset"
@@ -92,6 +94,8 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = "http://deepglobe.org/"
 
 SLYTAGSPLIT: Optional[Dict[str, List[str]]] = None
 TAGS: List[str] = None
+
+SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = ["train"]
 
 ##################################
 ###### ? Checks. Do not edit #####
@@ -136,5 +140,7 @@ def get_settings():
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
     settings["tags"] = TAGS
+
+    settings["explore_datasets"] = SECTION_EXPLORE_CUSTOM_DATASETS
 
     return settings
