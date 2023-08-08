@@ -1,6 +1,6 @@
-Dataset **DeepGlobe 2018** can be downloaded in Supervisely format:
+Dataset **DeepGlobe Land Cover 2018** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/v/K/yW/sxF7knXsw9GubnMuXn2w8IHrjruG4S54KtWYvGWouYZq4Pwa0L5ltVhH5p4ej6owzD8Y26IxE7XKc3xrveLrM0MzfnBSUmVh85PtygvyTvBF258YKQ4eZk84niog.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/g/j/C0/PWFcBB8I4PziYhdYPJqI1JHe5y6ze0DeHsgcWeUJSoSgWSBRqNQIDYp8Tn6Z7qm03DAG1fd5BPt8MUnvxGUmEjCVWjvoJTg6id89vuMT532nnWAPphlnlAfSbHXV.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
@@ -11,6 +11,8 @@ pip install --upgrade dataset-tools
 ``` python
 import dataset_tools as dtools
 
-dtools.download(dataset='DeepGlobe 2018', dst_path='~/dtools/datasets/DeepGlobe 2018.tar')
+dtools.download(dataset='DeepGlobe Land Cover 2018', dst_dir='~/dataset-ninja/')
 ```
-The data in original format can be 🔗[downloaded here](https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset/download?datasetVersionNumber=2)
+Make sure not to overlook the [python code example](https://developer.supervisely.com/getting-started/python-sdk-tutorials/iterate-over-a-local-project) available on the Supervisely Developer Portal. It will give you a clear idea of how to effortlessly work with the downloaded dataset.
+
+The data in original format can be [downloaded here](https://www.kaggle.com/datasets/balraj98/deepglobe-land-cover-classification-dataset/download?datasetVersionNumber=2)
