@@ -2,8 +2,8 @@
 
 The dataset consists of 1146 images with 3042 labeled objects belonging to 7 different classes including *agriculture_land*, *urban_land*, *rangeland*, and other: *water*, *barren_land*, *forest_land*, and *unknown*.
 
-Images in the DeepGlobe Land Cover 2018 dataset have pixel-level semantic segmentation annotations. There are 343 (30% of the total) unlabeled images (i.e. without annotations). There are 3 splits in the dataset: *test* (172 images), *train* (803 images), and *valid* (171 images)The dataset was released in 2018 by the DeepGlobe Satellite Challenge (CVPR 2018).
+Images in the DeepGlobe Land Cover 2018 dataset have pixel-level semantic segmentation annotations. There are 343 (30% of the total) unlabeled images (i.e. without annotations). There are 3 splits in the dataset: *train* (803 images), *test* (172 images), and *valid* (171 images). The dataset was released in 2018 by the DeepGlobe Satellite Challenge (CVPR 2018).
 
-Here are the visualized examples for each of the 7 classes:
+Here are the visualized examples for the classes:
 
 [Dataset classes](https://github.com/dataset-ninja/DeepGlobe/raw/main/visualizations/classes_preview.webm)

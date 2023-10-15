@@ -1,6 +1,6 @@
 Dataset **DeepGlobe Land Cover 2018** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/3/7/6B/0rdPw98dPa9mDJLDYP3LfY98m4lwpe6kjm6VLm7NmKmhMHg4M2t4bcYU7LCNgIt4TBQYOosyPYB4Vul41rSZCj5qEYfVSvfbzzqHNYJZPQACT9QtGDDXlqrxRxrG.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/x/h/B3/K0z2Jjg32ViBij8X6WQ7sSYNADOy7aLZk1eQdK2HeYoX9SeI6kgpZglhe7ywO3mthLhcNPPPvGtbXiUc6voDTupMxCbwPqG227vO2kJaik2dWi13bBH5Sk78RsT2.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
