@@ -10,11 +10,11 @@ The authors introduce the DeepGlobe Land Cover Classification dataset, a compreh
 
 Here is the description of the classes:*Urban land*: man-made, built up areas with human artifacts (can ignore roads for now which is hard to label).
 
-* *Agriculture land*: farms, any planned (i.e. regular) plantation, cropland, orchards, vineyards, nurseries, and ornamental horticultural areas; confined feeding operations.
-* *Rangeland*: any non-forest, non-farm, green land, grass.
-* *Forest land*: any land with x% tree crown density plus clearcuts.
-* *Water*: rivers, oceans, lakes, wetland, ponds.
-* *Barren land*: mountain, land, rock, dessert, beach, no vegetation.
-* *Unknown*: clouds and others.
+* *agriculture_land*: farms, any planned (i.e. regular) plantation, cropland, orchards, vineyards, nurseries, and ornamental horticultural areas; confined feeding operations.
+* *rangeland*: any non-forest, non-farm, green land, grass.
+* *forest_land*: any land with x% tree crown density plus clearcuts.
+* *water*: rivers, oceans, lakes, wetland, ponds.
+* *barren_land*: mountain, land, rock, dessert, beach, no vegetation.
+* *unknown*: clouds and others.
 
 The authors emphasize that the dataset offers significant challenges due to its diversity of land cover types and dense annotations. While they acknowledge that small human errors are inevitable in this exploratory task of pixel-wise classification, the dataset provides a substantial resource for advancing high-resolution satellite image understanding.
